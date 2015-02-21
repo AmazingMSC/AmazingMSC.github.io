@@ -10,21 +10,33 @@
     <meta name="author" content="Siu-chung Ma">
     
     <meta name="description" content="hello wolrd!
-这是第一篇博客。">
+这是第一篇博客。
+输几个公式看看
+$e^{i \pi} + 1 = 0$
+\(f(x)=e^x\)">
     
     
     <meta name="description" content="hello wolrd!
-这是第一篇博客。">
+这是第一篇博客。
+输几个公式看看
+$e^{i \pi} + 1 = 0$
+\(f(x)=e^x\)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="My new post">
 <meta property="og:url" content="http://scma.me/2015/02/21/My-new-post/">
 <meta property="og:site_name" content="Siu-chung Ma's Blog">
 <meta property="og:description" content="hello wolrd!
-这是第一篇博客。">
+这是第一篇博客。
+输几个公式看看
+$e^{i \pi} + 1 = 0$
+\(f(x)=e^x\)">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My new post">
 <meta name="twitter:description" content="hello wolrd!
-这是第一篇博客。">
+这是第一篇博客。
+输几个公式看看
+$e^{i \pi} + 1 = 0$
+\(f(x)=e^x\)">
 
 
     
@@ -101,12 +113,15 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#hello_wolrd!"><span class="toc-number">1.</span> <span class="toc-text">hello wolrd!</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hello_wolrd!"><span class="toc-number">1.</span> <span class="toc-text">hello wolrd!</span></a></li></ol>
 		
 		</div>
 		
-		<h3 id="hello_wolrd!">hello wolrd!</h3>
+		<h2 id="hello_wolrd!">hello wolrd!</h2>
 <p>这是第一篇博客。</p>
+<p>输几个公式看看</p>
+<p>$e^{i \pi} + 1 = 0$</p>
+<p>\(f(x)=e^x\)</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -161,7 +176,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#hello_wolrd!"><span class="toc-number">1.</span> <span class="toc-text">hello wolrd!</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hello_wolrd!"><span class="toc-number">1.</span> <span class="toc-text">hello wolrd!</span></a></li></ol>
  
   </div>
 
@@ -406,9 +421,23 @@ $(document).ready(function(){
 <!-- Totop End -->
 
 <!-- MathJax Begin -->
-<!-- mathjax config similar to math.stackexchange -->
-
-
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    }); 
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <!-- MathJax End -->
 
   </body>
